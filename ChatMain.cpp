@@ -12,7 +12,7 @@
 static TCHAR szWindowClass[] = _T("DesktopApp");
 
 // The string that appears in the application's title bar.
-static TCHAR szTitle[] = _T("Windows Desktop Guided Tour Application");
+static TCHAR szTitle[] = _T("Chat: The office messanger.");
 
 // Stored instance handle for use in Win32 API calls such as FindResource
 HINSTANCE hInst;
@@ -72,7 +72,7 @@ int WINAPI WinMain(
         szTitle,
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT,
-        500, 100,
+        400, 600,
         NULL,
         NULL,
         hInstance,
@@ -119,6 +119,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     HDC hdc;
     TCHAR greeting[] = _T("Hello, Windows desktop!");
 
+    //Custom User List
+    TCHAR u01[] = _T("Ram Shanker!");
+    TCHAR u02[] = _T("Ankit Verma!");
+    TCHAR u03[] = _T("Diganta Borah!");
+    TCHAR u04[] = _T("Mayank Airan!");
+    TCHAR u05[] = _T("Anak Sharma!");
+    TCHAR u06[] = _T("Windows User!");
+
     switch (message)
     {
     case WM_PAINT:
@@ -131,6 +139,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             5, 5,
             greeting, _tcslen(greeting));
         // End application-specific layout section.
+
+        //Test Layout.
+        
+        TextOut(hdc, 5, 25, u01, _tcslen(u01));
+        TextOut(hdc, 5, 45, u02, _tcslen(u02));
+        TextOut(hdc, 5, 65, u03, _tcslen(u03));
+        TextOut(hdc, 5, 85, u04, _tcslen(u04));
+        TextOut(hdc, 5, 105, u05, _tcslen(u05));
+        TextOut(hdc, 5, 125, u06, _tcslen(u06));
 
         EndPaint(hWnd, &ps);
         break;
