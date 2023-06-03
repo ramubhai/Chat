@@ -1,0 +1,20 @@
+# To-DO
+- Basic dummy UI layout.
+- Pixel density aware UI layout.
+- Library: Database - SQLite integration.
+- Library: Cryptography - libsodium integration.
+- Library: Font processing, Static default with OS library fallback.
+- Working text messages.
+- Working Bolt / Italic / Underline messaages.
+- Working File transfer.
+- Working Folder transfer.
+- Working screenshoot.
+- Setup auto-startup at boot time interface.
+- Configure Nightly / Beta / Release build channels.
+- Develop server based auto-update mechanism.
+- Develop within LAN (peer-to-peer) auto-update mechanism.
+- Android Application development.
+- Mac Port development.
+- Ubuntu development.
+- Debian development.
+- iOS Application development.
